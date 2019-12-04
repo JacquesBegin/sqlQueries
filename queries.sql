@@ -14,5 +14,11 @@ SELECT COUNT(DISTINCT column_name) FROM table_name;
 /* or */
 /* SELECT COUNT(*) AS temp_name FROM (SELECT DISTINCT column_name FROM table_name); */
 
-/* Filter selections using where clause with a conditional (=, <, >, <>) */
-SELECT column_names FROM table_name WHERE something='something';
+/* Filter selections using where clause with conditional (=, <, >, <=, >=, <>, BETWEEN, LIKE, IN) */
+SELECT column_names FROM table_name WHERE column_name='string'; /* text value */
+SELECT column_names FROM table_name WHERE column_name=1; /* numeric value */
+
+/* SELECT WHERE using OPERATORS: AND, OR, NOT */
+SELECT column_name FROM table_name WHERE column_name='string' AND column_name=1;
+SELECT column_name FROM table_name WHERE column_name='string' OR column_name=1;
+SELECT column_name FROM table_name WHERE NOT column_name='string';
