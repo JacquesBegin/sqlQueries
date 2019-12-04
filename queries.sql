@@ -27,6 +27,11 @@ SELECT column_name FROM table_name WHERE NOT column_name='string';
 SELECT column_name FROM table_name WHERE column_name='string' AND (column_name=1 OR column_name='string');
 SELECT column_name FROM table_name WHERE NOT column_name='string' AND NOT column_name=1;
 
-/* Sort result-set by ascending(ASC)/descending(DESC) order */
+/* Sort result-set by ascending(ASC)/descending(DESC) order. Default sort is ascending */
+SELECT column_name FROM table_name ORDER BY column_name;
 SELECT column_name FROM table_name ORDER BY column_name ASC;
 SELECT column_name FROM table_name ORDER BY column_name DESC;
+
+/* Sort by multiple columns, if there are matching values in the first sort then the second (or subsequent) field are sorted */
+SELECT column_name FROM table_name ORDER BY column_name, column_name;
+
