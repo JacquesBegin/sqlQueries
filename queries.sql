@@ -13,3 +13,6 @@ SELECT DISTINCT column_names FROM table_name;
 SELECT COUNT(DISTINCT column_name) FROM table_name;
 /* or */
 /* SELECT COUNT(*) AS temp_name FROM (SELECT DISTINCT column_name FROM table_name); */
+
+/* Filter selections using where clause with a conditional (=, <, >, <>) */
+SELECT column_names FROM table_name WHERE something='something';
