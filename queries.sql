@@ -22,3 +22,6 @@ SELECT column_names FROM table_name WHERE column_name=1; /* numeric value */
 SELECT column_name FROM table_name WHERE column_name='string' AND column_name=1;
 SELECT column_name FROM table_name WHERE column_name='string' OR column_name=1;
 SELECT column_name FROM table_name WHERE NOT column_name='string';
+
+/* Combine OPERATORS */
+SELECT column_name FROM table_name WHERE column_name='string' AND (column_name=1 OR column_name='string');
