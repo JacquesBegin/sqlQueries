@@ -25,3 +25,8 @@ SELECT column_name FROM table_name WHERE NOT column_name='string';
 
 /* Combine OPERATORS */
 SELECT column_name FROM table_name WHERE column_name='string' AND (column_name=1 OR column_name='string');
+SELECT column_name FROM table_name WHERE NOT column_name='string' AND NOT column_name=1;
+
+/* Sort result-set by ascending(ASC)/descending(DESC) order */
+SELECT column_name FROM table_name ORDER BY column_name ASC;
+SELECT column_name FROM table_name ORDER BY column_name DESC;
