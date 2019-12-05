@@ -35,3 +35,8 @@ SELECT column_name FROM table_name ORDER BY column_name DESC;
 /* Sort by multiple columns, if there are matching values in the first sort then the second (or subsequent) field are sorted */
 SELECT column_name FROM table_name ORDER BY column_name, column_name;
 
+/* Insert data into database */
+INSERT INTO table_name (column_name1, column_name2) VALUES (value1, value2);
+INSERT INTO table_name VALUES (value1, value2, value3);
+
+
