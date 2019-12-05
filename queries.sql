@@ -46,3 +46,6 @@ SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
 /* Update data in the database *** Omitting the WHERE clause will cause all records to be updated!!*** */
 UPDATE table_name SET column_name1 = value1, column_name2 = value2 WHERE condition="something";
 
+/* Update multiple records using WHERE clause */
+UPDATE table_name SET column_name = "value" WHERE column_name="value";
+
