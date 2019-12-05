@@ -33,7 +33,7 @@ SELECT column_name FROM table_name ORDER BY column_name ASC;
 SELECT column_name FROM table_name ORDER BY column_name DESC;
 
 /* Sort by multiple columns, if there are matching values in the first sort then the second (or subsequent) field are sorted */
-SELECT column_name FROM table_name ORDER BY column_name, column_name;
+SELECT column_name FROM table_name ORDER BY column_name1, column_name2;
 
 /* Insert data into database */
 INSERT INTO table_name (column_name1, column_name2) VALUES (value1, value2);
@@ -43,4 +43,6 @@ INSERT INTO table_name VALUES (value1, value2, value3);
 SELECT column_names FROM table_name WHERE column_name IS NULL;
 SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
 
+/* Update data in the database */
+UPDATE table_name SET column_name1 = value1, column_name2 = value2 WHERE condition="something";
 
