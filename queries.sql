@@ -43,9 +43,16 @@ INSERT INTO table_name VALUES (value1, value2, value3);
 SELECT column_names FROM table_name WHERE column_name IS NULL;
 SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
 
-/* Update data in the database *** Omitting the WHERE clause will cause all records to be updated!!*** */
+/* Update data in the database */
+/* *** Omitting the WHERE clause will cause all records to be updated!!*** */
 UPDATE table_name SET column_name1 = value1, column_name2 = value2 WHERE condition="something";
 
 /* Update multiple records using WHERE clause */
 UPDATE table_name SET column_name = "value" WHERE column_name="value";
 
+/* Delete data from the database */
+/* *** Omitting the WHERE clause will cause all records to be deleted!!*** */
+DELETE FROM table_name WHERE condition="something";
+
+/* Delete all records from a database table */
+DELETE FROM table_name;
