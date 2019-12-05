@@ -39,4 +39,8 @@ SELECT column_name FROM table_name ORDER BY column_name, column_name;
 INSERT INTO table_name (column_name1, column_name2) VALUES (value1, value2);
 INSERT INTO table_name VALUES (value1, value2, value3);
 
+/* Working with NULL values */
+SELECT column_names FROM table_name WHERE column_name IS NULL;
+SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
+
 
