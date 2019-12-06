@@ -56,3 +56,17 @@ DELETE FROM table_name WHERE condition="something";
 
 /* Delete all records from a database table */
 DELETE FROM table_name;
+
+/* Specify number of records in return-set */
+/* For SQL Serve / MS Access Syntax */
+/* SELECT TOP number|percent column_name FROM table_name WHERE condition="something"; */
+SELECT TOP 10 column_name FROM table_name;
+SELECT TOP 50 PERCENT column_name FROM table_name; 
+SELECT TOP 10 column_name FROM table_name WHERE condition="something";
+/* For MySQL Syntax */
+/* SELECT column_name FROM table_name; */
+/* SELECT column_name FROM table_name WHERE condition="something" LIMIT number; */
+/* For Oracle Syntax */
+SELECT column_name FROM table_name;
+SELECT column_name FROM table_name WHERE ROWNUM <= number;
+
