@@ -70,3 +70,9 @@ SELECT TOP 10 column_name FROM table_name WHERE condition="something";
 SELECT column_name FROM table_name;
 SELECT column_name FROM table_name WHERE ROWNUM <= number;
 
+/* Returns smallest and largest value in a column */
+SELECT MIN(column_name) FROM table_name;
+SELECT MIN(column_name) FROM table_name WHERE condition="something";
+
+SELECT MAX(column_name) FROM table_name;
+SELECT MAX(column_name) FROM table_name WHERE condition="something";
